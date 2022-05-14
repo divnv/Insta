@@ -16,6 +16,10 @@ body {
 	background: #ccc;
 }
 
+button {
+	background-color: transparent;
+}
+
 .container {
 	width: 360px;
 	margin: 0 auto;
@@ -27,7 +31,7 @@ body {
 
 /* === Header === */
 
-.header__container {
+.header__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -50,7 +54,7 @@ body {
 
 /* === Story === */
 
-.stories__container {
+.stories__inner {
 	display: flex;
 	justify-content: space-between;
 
@@ -67,30 +71,36 @@ body {
 	height: 72px;
 
 	position: relative;
-	
+
 	padding: 1px;
 	margin-bottom: 4px;
-	
+
 	cursor: pointer;
-	
+
 	border: 2px solid transparent;
 	border-radius: 50%;
+
+	transition: all 0.2s ease;
+}
+
+.story__circle.active:hover {
+	transform: scale(1.1);
 }
 
 .story__circle.active {
-background: linear-gradient(#c4c4c4 0 0) padding-box,
-	  linear-gradient(20deg, rgba(255,221,85,1) 0%, rgba(255,221,85,1) 10%, rgba(255,84,62,1) 50%, rgba(200,55,171,1) 100%) border-box;
-	
+	background: linear-gradient(#c4c4c4 0 0) padding-box,
+		linear-gradient(20deg, rgba(255, 221, 85, 1) 0%, rgba(255, 221, 85, 1) 10%, rgba(255, 84, 62, 1) 50%, rgba(200, 55, 171, 1) 100%) border-box;
+
 }
 
-.story__img	{
+.story__img {
 	width: 100%;
 	height: 100%;
 
 	padding: 3px;
 
 	border-radius: 50%;
-	
+
 	background: #fff;
 }
 
@@ -101,9 +111,9 @@ background: linear-gradient(#c4c4c4 0 0) padding-box,
 }
 
 .story__add {
-position: absolute;
-right: 5px;
-bottom: 2px;
+	position: absolute;
+	right: 5px;
+	bottom: 2px;
 }
 
 .story__name {
@@ -113,6 +123,7 @@ bottom: 2px;
 .story__name span {
 	cursor: pointer;
 }
+
 /* ================== */
 
 
@@ -136,7 +147,7 @@ bottom: 2px;
 .post__author {
 	display: flex;
 	align-items: center;
-	
+
 }
 
 .post__avatar {
@@ -150,7 +161,7 @@ bottom: 2px;
 	border-radius: 50%;
 
 	background: linear-gradient(#fff 0 0) padding-box,
-	  linear-gradient(20deg, rgba(255,221,85,1) 0%, rgba(255,221,85,1) 10%, rgba(255,84,62,1) 50%, rgba(200,55,171,1) 100%) border-box;
+		linear-gradient(20deg, rgba(255, 221, 85, 1) 0%, rgba(255, 221, 85, 1) 10%, rgba(255, 84, 62, 1) 50%, rgba(200, 55, 171, 1) 100%) border-box;
 }
 
 .post__avatar img {
@@ -167,7 +178,7 @@ bottom: 2px;
 	background-color: transparent;
 	background-image: url('../img/icons/more.svg');
 
-	
+
 }
 
 
@@ -210,7 +221,7 @@ bottom: 2px;
 }
 
 .actions__item:nth-child(3) a {
-background-image: url('../img/icons/message.svg');
+	background-image: url('../img/icons/message.svg');
 }
 
 .actions__item:last-child {
@@ -263,11 +274,11 @@ background-image: url('../img/icons/message.svg');
 
 	margin-right: 4px;
 
-	
+
 	border-radius: 50%;
 
 	background-color: #c4c4c4;
-	
+
 }
 
 .slider__item:last-child {
@@ -290,13 +301,15 @@ background-image: url('../img/icons/message.svg');
 
 .info-box {
 	padding: 0 16px;
+	margin-bottom: 12px;
 
 }
-	
+
 .info-box__likes {
 	font-weight: 600;
 	margin-bottom: 8px;
 }
+
 .info-box__desc {
 	margin-bottom: 8px;
 }
@@ -317,28 +330,97 @@ background-image: url('../img/icons/message.svg');
 	font-weight: 500;
 }
 
+/* ================== */
+
+/* === Comment box === */
 
 .comment-box {
-	width: 72px
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 23px 0 16px;
+	margin-bottom: 8px;
 }
 
 .comment-box__avatar {
 	width: 28px;
 	height: 28px;
 
-	display: block;
+	margin-right: 8px;
 
-	border-radius: 50%;
+	border-radius: 50px;
 
 	background-image: url('../img/stories/story-1.jpg');
-	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 }
 
+.comment-box__comment {
+	font-size: 13px;
+	font-weight: 400;
+	color: #000;
 
+	width: 218px;
+	line-height: 28px;
+}
 
+.comment-box__comment::placeholder {
+	font-size: 13px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.5);
+}
 
+.comment-box__emoji {
+	display: flex;
+	align-items: center;
+
+}
+
+.emoji__item {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.emoji__item+.emoji__item {
+	margin-left: 12px;
+}
+
+.emoji-heard {
+	width: 15px;
+	height: 15px;
+
+	background-image: url(../img/post/icons/heard-icon.svg);
+}
+
+.emoji-hands {
+	width: 13px;
+	height: 13px;
+
+	background-image: url(../img/post/icons/hands-icon.svg);
+}
+
+.emoji-more {
+	width: 8px;
+	height: 8px;
+
+	background-image: url(../img/post/icons/more-icon.svg);
+}
+
+/* === Post date === */
+
+.post__date {
+	font-size: 10px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.5);
+
+	padding: 0 16px;
+	margin-bottom: 8px;
+}
 
 
 
