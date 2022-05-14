@@ -422,12 +422,48 @@ button {
 	margin-bottom: 8px;
 }
 
+/* ================== */
 
+/* === Suggested === */
 
+.suggested {
+	padding: 16px;
+	background-color: #FAFAFA;
+}
 
+.suggested__header {
+	display: flex;
+	justify-content: space-between;
+}
 
+.suggested__title {
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
 
+}
 
+.suggested__btn {
+	font-size: 13px;
+	font-weight: 500;
+	color: #5792e7;
+}
+
+.suggested__slider {}
+
+/* ================== */
+
+/* === Card === */
+
+.card {}
+
+.card__img {}
+
+.card__username {}
+
+.card__tag {}
+
+.card__btn {}
 
 
 
