@@ -1,11 +1,8 @@
-@import "_normalize";
+@import "normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 
-
-
 /* === Common === */
-
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -496,6 +493,7 @@ button {
 	font-weight: 600;
 	color: #000;
 
+	padding-right: 13px;
 	margin-bottom: 4px;
 
 	display: inline-block;
@@ -512,7 +510,6 @@ button {
 	position: absolute;
 
 	top: 50%;
-	right: -13px;
 
 	transform: translateY(-50%);
 
