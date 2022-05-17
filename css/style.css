@@ -21,6 +21,8 @@ button {
 	width: 360px;
 	margin: 0 auto;
 
+	position: relative;
+
 	background: #fff;
 }
 
@@ -28,12 +30,26 @@ button {
 
 /* === Header === */
 
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+
+	z-index: 100;
+}
+
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 20px;
+	padding: 20px 20px 10px;
+
+	background-color: #fff;
+
 }
 
 .header__link {
@@ -45,6 +61,15 @@ button {
 
 .header__link:last-child {
 	margin-right: 0;
+}
+
+/* ================== */
+
+/* === Main === */
+
+.main {
+	padding-top: 71px;
+	padding-bottom: 50px;
 }
 
 /* ================== */
@@ -183,10 +208,19 @@ button {
 	width: 100%;
 	height: 470px;
 
-	background-image: url('../img/post/post-1.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.post__img--1 {
+	background-image: url('../img/post/post-1.jpeg');
+}
+.post__img--2 {
+	background-image: url('../img/post/post-2.jpeg');
+}
+.post__img--3 {
+	background-image: url('../img/post/post-3.jpeg');
 }
 
 .actions {
@@ -341,6 +375,10 @@ button {
 	margin-bottom: 8px;
 }
 
+.comment-box>* {
+	flex-shrink: 0;
+}
+
 .comment-box__avatar {
 	width: 28px;
 	height: 28px;
@@ -359,10 +397,12 @@ button {
 .comment-box__comment {
 	font-size: 13px;
 	font-weight: 400;
+	line-height: 28px;
 	color: #000;
 
-	width: 218px;
-	line-height: 28px;
+	margin-right: 8px;
+
+	flex: 0 1 100%;
 }
 
 .comment-box__comment::placeholder {
@@ -560,5 +600,66 @@ button {
 .card__close:hover {
 	opacity: 1;
 }
+
+/* ================== */
+
+/* === Footer === */
+
+.footer {
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+}
+
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 12px 32px;
+
+	background-color: #fff;
+}
+
+.footer__item {}
+
+.footer__item:nth-child(1) .footer__btn {
+	background-image: url('../img/icons/home.svg');
+}
+
+.footer__item:nth-child(2) .footer__btn {
+	background-image: url('../img/icons/search.svg');
+}
+
+.footer__item:nth-child(3) .footer__btn {
+	background-image: url('../img/icons/add.svg');
+}
+
+.footer__item:nth-child(4) .footer__btn {
+	background-image: url('../img/icons/like.svg');
+}
+
+.footer__item:nth-child(5) .footer__btn {
+	background-image: url('../img/stories/story-1.jpg');
+	border-radius: 50%;
+}
+
+
+.footer__btn {
+	width: 24px;
+	height: 24px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+
 
 /* ================== */

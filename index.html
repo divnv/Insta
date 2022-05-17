@@ -13,185 +13,370 @@
 
 	<div class="container">
 
-		<header>
-			<div class="header__inner">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
 
-				<a href="#" class="header__logo">
-					<img src="img/logo.svg" alt="Logo Instagram" class="header__img">
-				</a>
+					<a href="#" class="header__logo">
+						<img src="img/logo.svg" alt="Logo Instagram" class="header__img">
+					</a>
 
-				<div class="header__buttons">
-
-					<a href="#" class="header__link">
-						<img src="img/icons/add.svg" alt="add" class="header__button">
+					<div class="header__buttons">
 
 						<a href="#" class="header__link">
-							<img src="img/icons/like.svg" alt="add" class="header__button">
+							<img src="img/icons/add.svg" alt="add" class="header__button">
 
 							<a href="#" class="header__link">
-								<img src="img/icons/message.svg" alt="add" class="header__button">
-							</a>
+								<img src="img/icons/like.svg" alt="add" class="header__button">
+
+								<a href="#" class="header__link">
+									<img src="img/icons/message.svg" alt="add" class="header__button">
+								</a>
 
 
+					</div>
 				</div>
 			</div>
 
 		</header>
 
-		<section class="stories">
-			<div class="stories__inner">
+		<main class="main">
 
-				<div class="story">
-					<div class="story__circle">
-						<div class="story__img">
-							<img src="img/stories/story-1.jpg" alt="Mabel">
+			<section class="stories">
+				<div class="stories__inner">
+
+					<div class="story">
+						<div class="story__circle">
+							<div class="story__img">
+								<img src="img/stories/story-1.jpg" alt="Mabel">
+							</div>
+							<img src="img/stories/icons/add-story.svg" alt="add" class="story__add">
 						</div>
-						<img src="img/stories/icons/add-story.svg" alt="add" class="story__add">
-					</div>
-					<div class="story__name">
-						<span>Your story</span>
-					</div>
-
-				</div>
-
-				<div class="story">
-					<div class="story__circle active">
-						<div class="story__img">
-							<img src="img/stories/story-2.jpg" alt="Mabel">
-
+						<div class="story__name">
+							<span>Your story</span>
 						</div>
-					</div>
-					<div class="story__name">
-						<span>Mabel</span>
+
 					</div>
 
-				</div>
+					<div class="story">
+						<div class="story__circle active">
+							<div class="story__img">
+								<img src="img/stories/story-2.jpg" alt="Mabel">
 
-				<div class="story">
-					<div class="story__circle active">
-						<div class="story__img">
-							<img src="img/stories/story-3.jpg" alt="Mabel">
-
+							</div>
 						</div>
-					</div>
-					<div class="story__name">
-						<span>Gr. Stan</span>
-					</div>
-
-				</div>
-
-				<div class="story">
-					<div class="story__circle active">
-						<div class="story__img">
-							<img src="img/stories/story-4.jpg" alt="Mabel">
-
+						<div class="story__name">
+							<span>Mabel</span>
 						</div>
+
 					</div>
-					<div class="story__name">
-						<span>Soos</span>
+
+					<div class="story">
+						<div class="story__circle active">
+							<div class="story__img">
+								<img src="img/stories/story-3.jpg" alt="Mabel">
+
+							</div>
+						</div>
+						<div class="story__name">
+							<span>Gr. Stan</span>
+						</div>
+
+					</div>
+
+					<div class="story">
+						<div class="story__circle active">
+							<div class="story__img">
+								<img src="img/stories/story-4.jpg" alt="Mabel">
+
+							</div>
+						</div>
+						<div class="story__name">
+							<span>Soos</span>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="post">
+
+				<div class="post__header">
+
+					<div class="post__author">
+						<div class="post__avatar">
+							<img src="img/post/avatar-1.jpg" alt="Wendi">
+						</div>
+						<div class="post__name">Wendi</div>
+					</div>
+
+					<button class="post__more"></button>
+
+				</div>
+
+				<div class="post__img post__img--1"></div>
+
+				<div class="actions">
+
+					<ul class="actions__buttons">
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+					</ul>
+
+					<ul class="slider">
+						<li class="slider__item active"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+					</ul>
+
+					<a href="#" class="actions__favorite"></a>
+				</div>
+
+				<div class="info-box">
+					<p class="info-box__likes">23,046 likes</p>
+					<p class="info-box__desc">
+						<a class="info-box__name" href="#">Wendi</a> I have filmed a small vlog of north Dhaka, and I’m very
+						excited to post on YouTube, will po<button class="info-box__more">...more</button>
+					</p>
+					<a href="#" class="info-box__view-comments">
+						View all 1,012 comments
+					</a>
+				</div>
+
+				<div class="comment-box">
+					<div class="comment-box__avatar"></div>
+					<input class="comment-box__comment" type="text" placeholder="Add a comment..."></input>
+					<div class="comment-box__emoji">
+						<button class="emoji__item emoji-heard"></button>
+						<button class="emoji__item emoji-hands"></button>
+						<button class="emoji__item emoji-more"></button>
+					</div>
+
+
+				</div>
+
+				<p class="post__date">1 day ago</p>
+
+			</section>
+
+			<section class="suggested">
+
+				<div class="suggested__header">
+					<p class="suggested__title">Suggested for You</p>
+					<button class="suggested__btn">See All</button>
+				</div>
+
+				<div class="suggested__slider">
+
+					<div class="card">
+						<div class="card__img"></div>
+						<p class="card__username verified">McGucket</p>
+						<p class="card__tag">Popular</p>
+						<button class="card__btn">Follow</button>
+
+						<button class="card__close"></button>
+
 					</div>
 
 				</div>
 
-			</div>
-		</section>
+			</section>
 
-		<section class="post">
+			<section class="post">
 
-			<div class="post__header">
+				<div class="post__header">
 
-				<div class="post__author">
-					<div class="post__avatar">
-						<img src="img/post/avatar.jpg" alt="Wendi">
+					<div class="post__author">
+						<div class="post__avatar">
+							<img src="img/post/avatar-2.jpg" alt="shmebulock">
+						</div>
+						<div class="post__name">shmebulock</div>
 					</div>
-					<div class="post__name">Wendi</div>
+
+					<button class="post__more"></button>
+
 				</div>
 
-				<button class="post__more"></button>
+				<div class="post__img post__img--2"></div>
 
-			</div>
+				<div class="actions">
 
-			<div class="post__img"></div>
+					<ul class="actions__buttons">
 
-			<div class="actions">
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
 
-				<ul class="actions__buttons">
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
 
-					<li class="actions__item">
-						<a href="#" class="actions__link"></a>
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+					</ul>
+
+					<ul class="slider">
+						<li class="slider__item active"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+					</ul>
+
+					<a href="#" class="actions__favorite"></a>
+				</div>
+
+				<div class="info-box">
+					<p class="info-box__likes">15,309 likes</p>
+					<p class="info-box__desc">
+						<a class="info-box__name" href="#">shmebulock</a> I have filmed a small vlog of north Dhaka, and I’m
+						very
+						excited to post on YouTube, will po<button class="info-box__more">...more</button>
+					</p>
+					<a href="#" class="info-box__view-comments">
+						View all 539 comments
+					</a>
+				</div>
+
+				<div class="comment-box">
+					<div class="comment-box__avatar"></div>
+					<input class="comment-box__comment" type="text" placeholder="Add a comment..."></input>
+					<div class="comment-box__emoji">
+						<button class="emoji__item emoji-heard"></button>
+						<button class="emoji__item emoji-hands"></button>
+						<button class="emoji__item emoji-more"></button>
+					</div>
+
+
+				</div>
+
+				<p class="post__date">1 day ago</p>
+
+			</section>
+
+			<section class="post">
+
+				<div class="post__header">
+
+					<div class="post__author">
+						<div class="post__avatar">
+							<img src="img/post/avatar-3.png" alt="Bill Cipher">
+						</div>
+						<div class="post__name">Bill Cipher</div>
+					</div>
+
+					<button class="post__more"></button>
+
+				</div>
+
+				<div class="post__img post__img--3"></div>
+
+				<div class="actions">
+
+					<ul class="actions__buttons">
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+						<li class="actions__item">
+							<a href="#" class="actions__link"></a>
+						</li>
+
+					</ul>
+
+					<ul class="slider">
+						<li class="slider__item active"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+						<li class="slider__item"></li>
+					</ul>
+
+					<a href="#" class="actions__favorite"></a>
+				</div>
+
+				<div class="info-box">
+					<p class="info-box__likes">66,666 likes</p>
+					<p class="info-box__desc">
+						<a class="info-box__name" href="#">Bill Cipher</a> I have filmed a small vlog of north Dhaka, and I’m
+						very
+						excited to post on YouTube, will po<button class="info-box__more">...more</button>
+					</p>
+					<a href="#" class="info-box__view-comments">
+						View all 6,666 comments
+					</a>
+				</div>
+
+				<div class="comment-box">
+					<div class="comment-box__avatar"></div>
+					<input class="comment-box__comment" type="text" placeholder="Add a comment..."></input>
+					<div class="comment-box__emoji">
+						<button class="emoji__item emoji-heard"></button>
+						<button class="emoji__item emoji-hands"></button>
+						<button class="emoji__item emoji-more"></button>
+					</div>
+
+
+				</div>
+
+				<p class="post__date">1 day ago</p>
+
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<ul class="footer__list">
+
+					<li class="footer__item">
+						<button class="footer__btn"></button>
 					</li>
 
-					<li class="actions__item">
-						<a href="#" class="actions__link"></a>
+					<li class="footer__item">
+						<button class="footer__btn"></button>
 					</li>
 
-					<li class="actions__item">
-						<a href="#" class="actions__link"></a>
+					<li class="footer__item">
+						<button class="footer__btn"></button>
+					</li>
+
+					<li class="footer__item">
+						<button class="footer__btn"></button>
+					</li>
+
+					<li class="footer__item">
+						<button class="footer__btn"></button>
 					</li>
 
 				</ul>
-
-				<ul class="slider">
-					<li class="slider__item active"></li>
-					<li class="slider__item"></li>
-					<li class="slider__item"></li>
-					<li class="slider__item"></li>
-					<li class="slider__item"></li>
-					<li class="slider__item"></li>
-				</ul>
-
-				<a href="#" class="actions__favorite"></a>
 			</div>
+		</footer>
 
-			<div class="info-box">
-				<p class="info-box__likes">23,046 likes</p>
-				<p class="info-box__desc">
-					<a class="info-box__name" href="#">Wendi</a> I have filmed a small vlog of north Dhaka, and I’m very
-					excited to post on YouTube, will po<button class="info-box__more">...more</button>
-				</p>
-				<a href="#" class="info-box__view-comments">
-					View all 1,012 comments
-				</a>
-			</div>
-
-			<div class="comment-box">
-				<div class="comment-box__avatar"></div>
-				<input class="comment-box__comment" type="text" placeholder="Add a comment..."></input>
-				<div class="comment-box__emoji">
-					<button class="emoji__item emoji-heard"></button>
-					<button class="emoji__item emoji-hands"></button>
-					<button class="emoji__item emoji-more"></button>
-				</div>
-
-
-			</div>
-
-			<p class="post__date">1 day ago</p>
-
-		</section>
-
-		<section class="suggested">
-
-			<div class="suggested__header">
-				<p class="suggested__title">Suggested for You</p>
-				<button class="suggested__btn">See All</button>
-			</div>
-
-			<div class="suggested__slider">
-
-				<div class="card">
-					<div class="card__img"></div>
-					<p class="card__username verified">McGucket</p>
-					<p class="card__tag">Popular</p>
-					<button class="card__btn">Follow</button>
-
-					<button class="card__close"></button>
-
-				</div>
-
-			</div>
-
-		</section>
 
 	</div>
 
